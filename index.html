@@ -95,7 +95,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgrou
       </div>
     </div>
     <div class="hdiv"></div>
-    <div class="hero-desc">Fuimos victimas de una estafa que dejo nuestra fundacion sin recursos. Con esta rifa buscamos recuperar algo de lo perdido y seguir adelante con nuestro trabajo cultural y comunitario en Bogota. Cada boleta es un gesto de solidaridad con el arte y la paz.</div>
+    <div class="hero-desc"><strong>Sigamos construyendo paz juntos.</strong><br><br>
+En la Fundación Casa Alternativa creemos que el arte, la cultura y la memoria transforman vidas.<br><br>
+Recientemente enfrentamos un fraude que afectó parte de los recursos destinados a nuestros proyectos. Hoy queremos convertir esa dificultad en una oportunidad para fortalecer este sueño colectivo.<br><br>
+Con esta rifa solidaria buscamos recuperar parte de esos recursos y continuar llevando cultura, bienestar y construcción de paz a nuestras comunidades.<br><br>
+Cada boleta es un aporte para que este proyecto siga creciendo. Gracias por creer en nosotros y caminar a nuestro lado.<br><br>
+<strong>Con amor, sabor y paz. 🕊️</strong></div>
   </div>
 
   <div class="stats">
@@ -120,7 +125,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgrou
     </div>
     <div>
       <div class="phone-lbl">Pagos y consultas &mdash; Nequi / Bancolombia / WhatsApp</div>
-      <div class="phone-num">310 584 2697</div>
+      <div class="phone-num"><a href="https://wa.me/573105842697" style="color:inherit;text-decoration:none">310 584 2697</a></div>
     </div>
   </div>
 
@@ -146,7 +151,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgrou
     <div class="pay-box">
       <div class="pay-hd">Datos de pago</div>
       <div class="prow"><span class="plbl">Nequi / Bancolombia</span><span class="pval">310 584 2697</span></div>
-      <div class="prow"><span class="plbl">A nombre de</span><span class="pval">Casa Alternativa</span></div>
+      <div class="prow"><span class="plbl">A nombre de</span><span class="pval">Omar Navarro</span></div>
       <div class="prow"><span class="plbl">Valor total</span><span class="pval big" id="pv"></span></div>
       <div class="prow"><span class="plbl">Concepto</span><span class="pval" id="pc"></span></div>
     </div>
@@ -210,7 +215,7 @@ document.getElementById("bwa").addEventListener("click", function(){
   var msg = "Hola! Quiero participar en la rifa de Casa Alternativa.\n\nBoleta(s): #" +
     nums.join(", #") + "\nValor: " + pesos(sel.size*20000) +
     "\n\nAdjunto comprobante de pago.\nSorteo: Loteria de Bogota No. 2862 - Jueves 3 sep 2026.";
-  window.open("https://wa.me/573105842697?text="+encodeURIComponent(msg), "_blank");
+  window.location.href = "https://wa.me/573105842697?text=" + encodeURIComponent(msg);
 });
 </script>
 </body>
